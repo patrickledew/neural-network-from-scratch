@@ -36,8 +36,7 @@ func (n network) Print() {
 		if k == 0 { // first layer
 			fmt.Printf("[in %d] -> ", len(l.weights[0]))
 			fmt.Printf("%d -> ", len(l.weights))
-		}
-		if k == len(n) - 1 { // last layer
+		} else if k == len(n) - 1 { // last layer
 			fmt.Printf("out %d\n", len(l.weights))
 		} else {
 			fmt.Printf("%d -> ", len(l.weights))

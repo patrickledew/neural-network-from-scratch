@@ -1,3 +1,5 @@
+//// Simple class to store examples for training the network.
+
 package main
 
 import "math/rand"
